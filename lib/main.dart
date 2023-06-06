@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:snapy/screens/LoginScreen.dart';
+import 'package:snapy/screens/homePage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,6 +10,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: LoginScreen());
+    return MaterialApp(
+      home: HomePageScreen(),
+      theme: ThemeData(
+        useMaterial3: true,
+      ),
+    );
   }
 }
